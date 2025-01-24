@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap");
+
+  --verde-200: #acef75;
+  --verde-300: #91ee77;
+  --verde-400: #17e880;
+  --verde-700: #2e482c;
+  --verde-800: #16281f;
+  --verde-900: #0f1c15;
+  --verde-950: #030504;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "DM Serif Text", serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+
+  background-color: var(--verde-800);
+}
+body::-webkit-scrollbar {
+  padding-right: 4px;
+  width: 0.75rem;
+  background: transparent;
+}
+body::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background: var(--verde-200);
+}
+
+.bg-gradient {
+  background: linear-gradient(
+    225deg,
+    var(--verde-200) 8.12%,
+    var(--verde-400) 92.21%
+  );
+}
