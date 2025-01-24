@@ -2,7 +2,7 @@ import Button from "../ui/Button";
 
 const Contact = () => {
   return (
-    <section className="container">
+    <section className="container" id="contato">
       <div className="flex flex-wrap justify-between md:flex-nowrap">
         {/* Info */}
         <div>

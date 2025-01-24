@@ -30,16 +30,16 @@ const Cards = [
 const ReserveDate = () => {
   return (
     <>
-      <section className="container py-16">
+      <section className="container py-16" id="eventos">
         <p className="text-center uppercase text-verde-200">
           Conecte-se com a natureza
         </p>
 
-        <h1 className="my-8 text-center text-4xl md:text-6xl text-white">
+        <h1 className="my-8 text-center text-4xl text-white md:text-6xl">
           Cada Som, Cada Momento, Uma Nova Descoberta
         </h1>
 
-        <div className="md:overflow-hidden overflow-scroll">
+        <div className="overflow-scroll md:overflow-hidden">
           <div className="flex justify-center gap-8 md:flex-nowrap">
             {Cards.map((card) => (
               <CardWithButton
@@ -53,7 +53,6 @@ const ReserveDate = () => {
             ))}
           </div>
         </div>
-
       </section>
     </>
   );

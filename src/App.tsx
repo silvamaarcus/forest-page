@@ -28,7 +28,7 @@ function App() {
 
       <Hero />
 
-      <section className="container my-16">
+      <section className="container my-16" id="acomodacoes">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-12">
           <div className="col-span-12 content-end bg-map-lines bg-contain bg-no-repeat md:col-span-6">
             <h1 className="mt-8 text-5xl text-white">Refúgio Natural</h1>
@@ -99,7 +99,7 @@ function App() {
         <ReserveDate />
       </section>
 
-      <section className="container my-16">
+      <section className="container my-16" id="experiencias">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-12">
           <div className="col-span-12 rounded-xl bg-verde-900 p-8 md:col-span-6">
             <p className="uppercase text-verde-200">Experiências Exclusivas</p>
