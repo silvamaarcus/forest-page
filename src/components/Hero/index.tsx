@@ -7,7 +7,7 @@ import { ChevronRight } from "lucide-react";
 const Hero = () => {
   return (
     <section className="container">
-      <div className="bg-hero-pattern flex h-[453px] flex-col justify-end rounded-lg bg-cover bg-center bg-no-repeat p-8 md:h-[583px]">
+      <div className="flex h-[453px] flex-col justify-end rounded-lg bg-hero-pattern bg-cover bg-center bg-no-repeat p-8 md:h-[583px]">
         <div className="flex flex-col rounded-lg bg-black/70 p-4 md:max-w-[400px] md:flex-row md:items-center md:justify-between md:rounded-full md:bg-black md:p-0">
           <span className="text-base text-white md:pl-4">
             vagas para dezembro abertas
@@ -18,7 +18,7 @@ const Hero = () => {
             <ChevronRight />
           </Button>
         </div>
-        <h1 className="mt-8 text-5xl text-white md:max-w-[40%]">
+        <h1 className="mt-8 w-full text-4xl text-white md:max-w-[40%] md:text-5xl">
           Venha Experimentar a Vida na Floresta
         </h1>
         <div className="mt-8 flex flex-col text-white md:mt-28 md:flex-row md:items-center md:justify-between">
