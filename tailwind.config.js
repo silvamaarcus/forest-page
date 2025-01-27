@@ -13,7 +13,6 @@ export default {
       backgroundImage: {
         "hero-pattern": "url('/assets/img/floresta.jpg')",
         "map-lines": "url('/assets/img/padrao.svg')",
-        "video-bg": "url('/path-to-your-video-poster.jpg')",
       },
       fontFamily: {
         fontFamily: {

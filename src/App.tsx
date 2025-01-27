@@ -1,3 +1,5 @@
+import WeatherProvider from "./stores/WeatherContext";
+
 import InfoDay from "./components/InfoDay";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
@@ -21,7 +23,7 @@ import SurfbotLogo from "/assets/img/parceiros/surfbot.svg";
 
 function App() {
   return (
-    <>
+    <WeatherProvider>
       <InfoDay />
 
       <Header />
@@ -185,7 +187,7 @@ function App() {
       </section>
 
       <Footer />
-    </>
+    </WeatherProvider>
   );
 }
 

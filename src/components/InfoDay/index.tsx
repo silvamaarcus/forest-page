@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
+import { useWeather } from "../../stores/WeatherContext";
 
 const InfoDay = () => {
   const [temperature, setTemperature] = useState("");
-  const [wather, setWather] = useState("");
+  const { weather, setWeather } = useWeather();
 
   const day = new Date()
     .toLocaleDateString("pt-BR", { weekday: "long" })
@@ -20,7 +21,8 @@ const InfoDay = () => {
       setTemperature(temp);
 
       const wather = data.current_condition[0].weatherDesc[0].value;
-      setWather(wather);
+      setWeather(wather);
+      console.log(wather);
     } catch (error) {
       console.error("Erro ao obter a temperatura:", error);
     }
@@ -42,7 +44,7 @@ const InfoDay = () => {
               {temperature}º
             </span>
             <span className="px-4 py-2" id="umidade">
-              {wather === "Rain" ? <span>🌧️</span> : <span>🌤️</span>}
+              {weather === "Rain" ? <span>🌧️</span> : <span>🌤️</span>}
             </span>
           </div>
           <span className="absolute -left-1 block size-2 rounded-full bg-verde-300"></span>

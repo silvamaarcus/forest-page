@@ -3,11 +3,25 @@ import Button from "../ui/Button";
 import WildbeastLogo from "/assets/img/parceiros/wildbeast.svg";
 
 import { ChevronRight } from "lucide-react";
+import { useWeather } from "../../stores/WeatherContext";
 
 const Hero = () => {
+  const { weather } = useWeather();
+
   return (
     <section className="container">
-      <div className="flex h-[453px] flex-col justify-end rounded-lg bg-hero-pattern bg-cover bg-center bg-no-repeat p-8 md:h-[583px]">
+      <div className="relative flex h-[453px] flex-col justify-end rounded-lg bg-cover bg-center bg-no-repeat p-8 md:h-[583px]">
+        <video
+          className="animate-fade-in absolute inset-0 -z-10 h-full w-full rounded-lg object-cover"
+          autoPlay
+          muted
+          loop
+        >
+          <source
+            src={`${weather === "Rain" ? "/assets/img/video_chuva.mp4" : "/assets/img/video_sol.mp4"}`}
+            type="video/mp4"
+          />
+        </video>
         <div className="flex flex-col rounded-lg bg-black/70 p-4 md:max-w-[400px] md:flex-row md:items-center md:justify-between md:rounded-full md:bg-black md:p-0">
           <span className="text-base text-white md:pl-4">
             vagas para dezembro abertas
